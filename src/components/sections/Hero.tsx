@@ -2,9 +2,9 @@ import { TypeAnimation } from "react-type-animation";
 
 export const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center animate-fadeIn">
-        <div className="flex flex-col items-center space-y-4 mb-8">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 lg:px-8 relative">
+      <div className="absolute top-8 left-8">
+        <div className="flex flex-col items-center space-y-4">
           <img
             src="/logo-Allen.png"
             alt="Allen Logo"
@@ -16,6 +16,8 @@ export const Hero = () => {
             className="w-32 h-auto opacity-70"
           />
         </div>
+      </div>
+      <div className="max-w-4xl mx-auto text-center animate-fadeIn">
         <h1 className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
           Allen Z Ndlovu
         </h1>
