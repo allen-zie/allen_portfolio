@@ -16,26 +16,35 @@ export const Hero = () => {
           className="hero-logo-secondary"
         />
       </div>
-      <div className="hero-content">
-        <h1 className="hero-title">
-          Allen Z Ndlovu
-        </h1>
-        <div className="text-xl lg:text-2xl text-foreground/80 mb-8 h-[60px]">
-          <TypeAnimation
-            sequence={[
-              "Full Stack Developer",
-              1000,
-              "Software Engineer",
-              1000,
-            ]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
+      <div className="hero-container">
+        <div className="hero-content">
+          <h1 className="hero-title">
+            Hi my name is Allen
+          </h1>
+          <div className="text-xl lg:text-2xl text-foreground/80 mb-8 h-[60px]">
+            <TypeAnimation
+              sequence={[
+                "Full Stack Developer",
+                1000,
+                "Software Engineer",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </div>
+          <p className="hero-subtitle">
+            Crafting digital experiences that make a difference
+          </p>
+        </div>
+        <div className="hero-image">
+          <img
+            src="/AllenZipho.png"
+            alt="Allen Profile"
+            className="profile-image"
           />
         </div>
-        <p className="hero-subtitle">
-          Crafting digital experiences that make a difference
-        </p>
       </div>
     </section>
   );

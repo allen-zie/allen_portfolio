@@ -29,10 +29,35 @@
   opacity: 0.7;
 }
 
-.hero-content {
-  max-width: 56rem;
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  text-align: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  flex: 1;
+  text-align: left;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  max-width: 400px;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -57,4 +82,19 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .profile-image {
+    max-width: 300px;
+  }
 }
