@@ -46,11 +46,12 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-.hero-image {
+.hero-image-container {
   flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .profile-image {
@@ -84,6 +85,22 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-link {
+  color: #9b87f5;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #E5DEFF;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -96,5 +113,9 @@
   
   .profile-image {
     max-width: 300px;
+  }
+
+  .social-links {
+    margin-top: 1rem;
   }
 }

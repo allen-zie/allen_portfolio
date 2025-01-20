@@ -1,4 +1,5 @@
 import { TypeAnimation } from "react-type-animation";
+import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import "./Hero.css";
 
 export const Hero = () => {
@@ -38,12 +39,26 @@ export const Hero = () => {
             Crafting digital experiences that make a difference
           </p>
         </div>
-        <div className="hero-image">
+        <div className="hero-image-container">
           <img
             src="/AllenZipho.png"
             alt="Allen Profile"
             className="profile-image"
           />
+          <div className="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Github size={24} />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Linkedin size={24} />
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Twitter size={24} />
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+              <Instagram size={24} />
+            </a>
+          </div>
         </div>
       </div>
     </section>
