@@ -1,4 +1,28 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
+
 export const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Show success toast
+    toast({
+      title: "Message sent!",
+      description: "Thank you for your message. I'll get back to you soon.",
+    });
+    
+    // Reset form
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-20">
       <div className="max-w-4xl mx-auto w-full text-center">
@@ -6,12 +30,42 @@ export const Contact = () => {
         <p className="text-lg text-foreground/80 mb-12">
           I'm always open to new opportunities and interesting projects.
         </p>
-        <a
-          href="mailto:contact@allenzndlovu.com"
-          className="inline-block px-8 py-3 rounded-full bg-primary text-white hover:bg-primary/90 transition-colors"
-        >
-          Say Hello
-        </a>
+        
+        <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6 text-left">
+          <div className="space-y-2">
+            <label htmlFor="email" className="text-sm font-medium text-foreground/80">
+              Email
+            </label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="your@email.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="bg-secondary/10"
+            />
+          </div>
+          
+          <div className="space-y-2">
+            <label htmlFor="message" className="text-sm font-medium text-foreground/80">
+              Message
+            </label>
+            <Textarea
+              id="message"
+              placeholder="Your message..."
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+              className="min-h-[150px] bg-secondary/10"
+            />
+          </div>
+          
+          <Button type="submit" className="w-full">
+            Send Message
+          </Button>
+        </form>
+
         <div className="mt-12 text-foreground/60">
           <p>Based in South Africa</p>
           <p>Available for remote work worldwide</p>
