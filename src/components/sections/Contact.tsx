@@ -27,13 +27,13 @@ export const Contact = () => {
     <section id="contact" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-20">
       <div className="max-w-4xl mx-auto w-full text-center">
         <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-primary">Get In Touch</h2>
-        <p className="text-lg text-foreground/80 mb-12">
+        <p className="text-lg text-white mb-12">
           I'm always open to new opportunities and interesting projects.
         </p>
         
         <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6 text-left">
           <div className="space-y-2">
-            <label htmlFor="email" className="text-sm font-medium text-foreground/80">
+            <label htmlFor="email" className="text-sm font-medium text-white">
               Email
             </label>
             <Input
@@ -43,12 +43,12 @@ export const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="bg-secondary/10"
+              className="bg-secondary/10 text-white placeholder:text-white/50"
             />
           </div>
           
           <div className="space-y-2">
-            <label htmlFor="message" className="text-sm font-medium text-foreground/80">
+            <label htmlFor="message" className="text-sm font-medium text-white">
               Message
             </label>
             <Textarea
@@ -57,7 +57,7 @@ export const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
-              className="min-h-[150px] bg-secondary/10"
+              className="min-h-[150px] bg-secondary/10 text-white placeholder:text-white/50"
             />
           </div>
           
@@ -66,7 +66,7 @@ export const Contact = () => {
           </Button>
         </form>
 
-        <div className="mt-12 text-foreground/60">
+        <div className="mt-12 text-white">
           <p>Based in South Africa</p>
           <p>Available for remote work worldwide</p>
         </div>
