@@ -1,0 +1,79 @@
+.navigation {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgba(229, 222, 255, 0.1);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease-in-out;
+  z-index: 40;
+}
+
+.navigation-collapsed {
+  width: 60px;
+}
+
+.navigation-expanded {
+  width: 80px;
+}
+
+@media (min-width: 1024px) {
+  .navigation-expanded {
+    width: 100px;
+  }
+}
+
+.navigation-button {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9b87f5;
+  padding: 4px;
+  border-radius: 9999px;
+}
+
+.navigation-icon {
+  width: 16px;
+  height: 16px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.navigation-icon-collapsed {
+  transform: rotate(180deg);
+}
+
+.navigation-menu {
+  margin-top: 80px;
+}
+
+.navigation-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation-item-icon {
+  width: 24px;
+  height: 24px;
+  color: #9b87f5;
+  transition: color 0.3s;
+}
+
+.navigation-item:hover .navigation-item-icon {
+  color: rgba(155, 135, 245, 0.8);
+}
+
+.navigation-item-label {
+  font-size: 0.75rem;
+  color: rgba(155, 135, 245, 0.8);
+  transition: color 0.3s;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.navigation-item:hover .navigation-item-label {
+  color: #9b87f5;
+}

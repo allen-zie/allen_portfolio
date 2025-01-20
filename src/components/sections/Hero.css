@@ -1,0 +1,60 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.hero-logos {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-logo-main {
+  width: 12rem;
+  height: auto;
+  opacity: 0.8;
+}
+
+.hero-logo-secondary {
+  width: 8rem;
+  height: auto;
+  opacity: 0.7;
+}
+
+.hero-content {
+  max-width: 56rem;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.hero-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #9b87f5, #E5DEFF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}

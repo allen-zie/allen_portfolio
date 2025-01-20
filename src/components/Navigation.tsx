@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { cn } from "@/lib/utils";
 import { Home, User, Code, Briefcase, Mail, Menu, X, ChevronRight } from "lucide-react";
+import "./Navigation.css";
 
 const navItems = [
   { id: "home", label: "Home", icon: Home },
@@ -31,33 +31,28 @@ export const Navigation = () => {
         {isOpen ? <X className="text-white" /> : <Menu className="text-white" />}
       </button>
       <nav
-        className={cn(
-          "fixed right-0 top-0 h-full bg-secondary/90 backdrop-blur-sm transition-all duration-300 ease-in-out z-40",
-          isCollapsed ? "w-[60px]" : "w-[80px] lg:w-[100px]",
-          !isOpen && "translate-x-full lg:translate-x-0"
-        )}
+        className={`navigation ${isCollapsed ? 'navigation-collapsed' : 'navigation-expanded'} ${
+          !isOpen && 'translate-x-full lg:translate-x-0'
+        }`}
       >
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="absolute -left-3 top-1/2 transform -translate-y-1/2 bg-primary p-1 rounded-full hidden lg:block"
+          className="navigation-button hidden lg:block"
         >
           <ChevronRight
-            className={cn(
-              "w-4 h-4 text-white transition-transform duration-300",
-              isCollapsed ? "rotate-180" : ""
-            )}
+            className={`navigation-icon ${isCollapsed ? 'navigation-icon-collapsed' : ''}`}
           />
         </button>
-        <div className="space-y-8 mt-20">
+        <div className="navigation-menu">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="w-full flex flex-col items-center justify-center space-y-1 group"
+              className="navigation-item"
             >
-              <item.icon className="w-6 h-6 text-primary group-hover:text-primary/80 transition-colors" />
+              <item.icon className="navigation-item-icon" />
               {!isCollapsed && (
-                <span className="text-xs text-primary/80 group-hover:text-primary transition-colors animate-fadeIn">
+                <span className="navigation-item-label">
                   {item.label}
                 </span>
               )}
