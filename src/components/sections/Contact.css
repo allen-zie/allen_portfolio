@@ -1,0 +1,71 @@
+
+.contact-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+.contact-container {
+  max-width: 56rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.contact-description {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.contact-form {
+  max-width: 28rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: white;
+}
+
+.form-input {
+  background-color: rgba(var(--secondary), 0.1);
+  color: white;
+}
+
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-footer {
+  margin-top: 3rem;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .contact-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}

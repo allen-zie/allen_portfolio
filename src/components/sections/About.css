@@ -1,0 +1,36 @@
+
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+}
+
+.about-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .about-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
