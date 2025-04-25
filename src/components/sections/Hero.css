@@ -57,8 +57,8 @@
 .profile-image {
   max-width: 400px;
   height: auto;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 95%;
+  box-shadow: 0 4px 6px -1px rgba(6, 6, 6, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -83,6 +83,16 @@
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.animate {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 250;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #a19cb8, #E5DEFF);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .social-links {

@@ -3,7 +3,7 @@
   right: 0;
   top: 0;
   height: 100%;
-  background-color: rgba(229, 222, 255, 0.1);
+  background-color: rgba(253, 253, 255, 0);
   backdrop-filter: blur(8px);
   transition: all 0.3s ease-in-out;
   z-index: 40;
@@ -49,6 +49,8 @@
 }
 
 .navigation-item {
+  padding-top: 50%;
+  margin-top: ;
   width: 100%;
   display: flex;
   flex-direction: column;
