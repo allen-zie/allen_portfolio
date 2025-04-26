@@ -1,9 +1,12 @@
+
+import './About.css';
+
 export const About = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-20">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-primary animate-fadeIn">About Me</h2>
-        <div className="space-y-6 text-lg text-foreground/80">
+    <section id="about" className="about-section">
+      <div className="about-container">
+        <h2 className="about-title text-primary animate-fadeIn">About Me</h2>
+        <div className="about-content">
           <p className="animate-fadeIn" style={{ animationDelay: "200ms" }}>
             Hello! I'm Allen, a passionate Techie with a keen eye for creating
             elegant solutions to complex problems. Be it web development, data
