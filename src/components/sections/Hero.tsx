@@ -1,3 +1,4 @@
+
 import { TypeAnimation } from "react-type-animation";
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import "./Hero.css";
@@ -39,7 +40,7 @@ export const Hero = () => {
                 1000,
               ]}
               wrapper="span"
-              speed={180}
+              speed={{ type: 'keyStrokeDelayInMs', value: 180 }}
               repeat={Infinity}
             /></h1>
             
