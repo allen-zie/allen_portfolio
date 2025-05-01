@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Home, User, Code, Briefcase, Mail, Menu, X, ChevronRight } from "lucide-react";
+import { Home, User, Code, Briefcase, Mail, Menu, X, ChevronRight, GraduationCap } from "lucide-react";
 import "./Navigation.css";
 
 const navItems = [
   { id: "home", label: "Home", icon: Home },
   { id: "about", label: "About", icon: User },
+  { id: "education", label: "Education", icon: GraduationCap },
   { id: "skills", label: "Skills", icon: Code },
   { id: "projects", label: "Projects", icon: Briefcase },
   { id: "contact", label: "Contact", icon: Mail },
