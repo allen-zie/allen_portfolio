@@ -7,7 +7,8 @@ export const Education = () => {
     <section id="education" className="education">
       <div className="container">
         <h2 className="section-title">Education & Experience</h2>
-          
+        
+        <div className="timeline">
           <div className="timeline-container experience-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
@@ -49,8 +50,6 @@ export const Education = () => {
               </div>
             </div>
           </div>
-
-          <div className="timeline">
           <div className="timeline-container education-container">
             <div className="timeline-icon">
               <GraduationCap size={24} />
