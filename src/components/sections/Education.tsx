@@ -9,7 +9,7 @@ export const Education = () => {
         <h2 className="section-title">Education & Experience</h2>
         
         <div className="timeline">
-          <div className="timeline-container experience-container">
+          <div className="timeline-container right-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
             </div>
@@ -23,7 +23,7 @@ export const Education = () => {
             </div>
           </div>
           
-          <div className="timeline-container experience-container">
+          <div className="timeline-container left-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
             </div>
@@ -37,7 +37,7 @@ export const Education = () => {
             </div>
           </div>
           
-          <div className="timeline-container experience-container">
+          <div className="timeline-container right-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
             </div>
@@ -50,7 +50,8 @@ export const Education = () => {
               </div>
             </div>
           </div>
-          <div className="timeline-container education-container">
+
+          <div className="timeline-container left-container">
             <div className="timeline-icon">
               <GraduationCap size={24} />
             </div>

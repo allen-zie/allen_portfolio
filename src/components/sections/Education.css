@@ -57,19 +57,19 @@
   z-index: 1;
 }
 
-.education-container {
+.left-container {
   left: 0;
 }
 
-.education-container::after {
+.left-container::after {
   right: -10px;
 }
 
-.experience-container {
+.right-container {
   left: 55%;
 }
 
-.experience-container::after {
+.right-container::after {
   left: -10px;
 }
 
@@ -125,13 +125,13 @@
     top: 25px;
   }
   
-  .education-container,
-  .experience-container {
+  .left-container,
+  .right-container {
     left: 0;
   }
   
-  .education-container::after,
-  .experience-container::after {
+  .left-container::after,
+  .right-container::after {
     left: 21px;
   }
 }
