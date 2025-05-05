@@ -1,3 +1,5 @@
+import pizzasales from '../../assets/images/PizzaSales.png'
+
 export const Projects = () => {
   const projects = [
     {
@@ -28,6 +30,11 @@ export const Projects = () => {
               className="p-6 rounded-lg bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-colors"
             >
               <h3 className="text-xl font-semibold mb-3 text-primary/80">{project.title}</h3>
+              <img
+                src={pizzasales}
+                alt="Pizza Sales Dashboard"
+                className="pizza-sales"
+              />
               <p className="text-foreground/70 mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((tech) => (
