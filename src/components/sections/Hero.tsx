@@ -32,6 +32,8 @@ export const Hero = () => {
           <div className="animate">
             <h1>I am a <TypeAnimation
               sequence={[
+                "Web3 Developer in the making",
+                500,
                 "Data Engineer",
                 1000,
                 "Full Stack Developer",
