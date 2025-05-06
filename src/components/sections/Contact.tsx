@@ -38,7 +38,7 @@ export const Contact = () => {
       <div className="contact-container">
         <h2 className="contact-title text-primary">Get In Touch</h2>
         <p className="contact-description">
-          I'm always open to new opportunities and interesting projects.
+          Let's work together and produce something AI can't do yet!.
         </p>
         
         <form onSubmit={handleSubmit} className="contact-form">
