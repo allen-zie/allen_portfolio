@@ -4,15 +4,24 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { Mail } from "lucide-react";
 import './Contact.css';
 
 export const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Construct the mailto link
+    const mailtoLink = `mailto:allenziphondlovu@gmail.com?subject=Portfolio Contact from ${email}&body=${encodeURIComponent(message)}`;
+    
+    // Open the email client
+    window.open(mailtoLink, '_blank');
     
     toast({
       title: "Message sent!",
@@ -21,6 +30,7 @@ export const Contact = () => {
     
     setEmail("");
     setMessage("");
+    setIsSubmitting(false);
   };
 
   return (
@@ -61,8 +71,8 @@ export const Contact = () => {
             />
           </div>
           
-          <Button type="submit" className="w-full">
-            Send Message
+          <Button type="submit" className="w-full" disabled={isSubmitting}>
+            <Mail className="mr-2" /> Send Message
           </Button>
         </form>
 
