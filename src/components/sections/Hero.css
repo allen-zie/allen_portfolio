@@ -1,3 +1,4 @@
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -59,7 +60,14 @@
   height: auto;
   border-radius: 5%;
   box-shadow: 0 4px 6px -1px rgba(6, 6, 6, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  animation: fadeIn 0.5s ease-out;
+  animation: fadeIn 0.5s ease-out, heartbeat 1.5s infinite;
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  animation: none;
+  border: 3px solid #9b87f5;
+  transform: scale(1.02);
 }
 
 .hero-title {
@@ -111,6 +119,18 @@
   transform: translateY(-2px);
 }
 
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -127,5 +147,43 @@
 
   .social-links {
     margin-top: 1rem;
+  }
+  
+  .hero-logos {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-logo-main {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-logos {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero-logo-main {
+    width: 6rem;
+  }
+  
+  .profile-image {
+    max-width: 250px;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  
+  .animate {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
