@@ -27,7 +27,7 @@
 .timeline::after {
   content: '';
   position: absolute;
-  width: 4px;
+  width: 2px;
   background-color: #9b87f5;
   top: 0;
   bottom: 0;
@@ -51,7 +51,7 @@
   width: 20px;
   height: 20px;
   background-color: #1A1F2C;
-  border: 4px solid #9b87f5;
+  border: 4px solid #fb0000;
   border-radius: 50%;
   top: 25px;
   z-index: 1;
