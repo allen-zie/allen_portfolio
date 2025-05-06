@@ -32,29 +32,31 @@ export const Navigation = () => {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 p-2 bg-primary rounded-full lg:hidden"
+        className="fixed top-4 right-4 z-50 p-2 bg-primary rounded-full lg:hidden animate-fade-in"
       >
         {isOpen ? <X className="text-white" /> : <Menu className="text-white" />}
       </button>
       <nav
         className={`navigation ${isCollapsed ? 'navigation-collapsed' : 'navigation-expanded'} ${
           !isOpen && 'translate-x-full lg:translate-x-0'
-        }`}
+        } animate-slide-in-left lg:animate-fade-in`}
       >
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="navigation-button hidden lg:block"
+          className="navigation-button hidden lg:block animate-fade-in"
+          style={{ animationDelay: "300ms" }}
         >
           <ChevronRight
             className={`navigation-icon ${isCollapsed ? 'navigation-icon-collapsed' : ''}`}
           />
         </button>
         <div className="navigation-menu">
-          {navItems.map((item) => (
+          {navItems.map((item, index) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="navigation-item"
+              className="navigation-item animate-fade-in"
+              style={{ animationDelay: `${(index + 1) * 100}ms` }}
             >
               <item.icon className="navigation-item-icon" />
               {!isCollapsed && (
@@ -66,7 +68,8 @@ export const Navigation = () => {
           ))}
           <button
             onClick={openResume}
-            className="navigation-item"
+            className="navigation-item animate-fade-in"
+            style={{ animationDelay: "700ms" }}
           >
             <FileText className="navigation-item-icon" />
             {!isCollapsed && (

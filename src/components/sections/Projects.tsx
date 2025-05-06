@@ -1,3 +1,4 @@
+
 import pizzasales from '../../assets/images/PizzaSales.png'
 
 export const Projects = () => {
@@ -22,25 +23,30 @@ export const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-20">
       <div className="max-w-4xl mx-auto w-full">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-primary">Featured Projects</h2>
+        <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-primary animate-fade-in">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <div
               key={project.title}
-              className="p-6 rounded-lg bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-colors"
+              className="p-6 rounded-lg bg-secondary/10 backdrop-blur-sm hover:bg-secondary/20 transition-colors animate-fade-in"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
               <h3 className="text-xl font-semibold mb-3 text-primary/80">{project.title}</h3>
               <img
                 src={pizzasales}
                 alt="Pizza Sales Dashboard"
-                className="pizza-sales"
+                className="pizza-sales animate-fade-in"
+                style={{ animationDelay: `${index * 200 + 100}ms` }}
               />
-              <p className="text-foreground/70 mb-4">{project.description}</p>
+              <p className="text-foreground/70 mb-4 animate-fade-in" style={{ animationDelay: `${index * 200 + 200}ms` }}>
+                {project.description}
+              </p>
               <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
+                {project.tech.map((tech, techIndex) => (
                   <span
                     key={tech}
-                    className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary"
+                    className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary animate-fade-in"
+                    style={{ animationDelay: `${index * 200 + 300 + techIndex * 100}ms` }}
                   >
                     {tech}
                   </span>
