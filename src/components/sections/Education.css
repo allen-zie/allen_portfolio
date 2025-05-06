@@ -47,7 +47,7 @@
 
 .timeline-container::after {
   content: '';
-  position: relative;
+  position: absolute;
   width: 20px;
   height: 20px;
   background-color: #1A1F2C;
