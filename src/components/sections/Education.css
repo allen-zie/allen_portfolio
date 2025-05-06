@@ -55,7 +55,6 @@
   border-radius: 50%;
   top: 25px;
   z-index: 1;
-  transform: translateX(-50%);
 }
 
 .left-container {
