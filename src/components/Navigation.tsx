@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { Home, User, Code, Briefcase, Mail, Menu, X, ChevronRight, GraduationCap, FileText } from "lucide-react";
+import { Home, User, Code, Briefcase, Mail, Menu, X, ChevronRight, GraduationCap } from "lucide-react";
 import "./Navigation.css";
 
 const navItems = [
@@ -22,10 +22,6 @@ export const Navigation = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
-  };
-
-  const openResume = () => {
-    window.open("/resume.pdf", "_blank");
   };
 
   return (
@@ -66,18 +62,6 @@ export const Navigation = () => {
               )}
             </button>
           ))}
-          <button
-            onClick={openResume}
-            className="navigation-item animate-fade-in"
-            style={{ animationDelay: "700ms" }}
-          >
-            <FileText className="navigation-item-icon" />
-            {!isCollapsed && (
-              <span className="navigation-item-label">
-                Resume
-              </span>
-            )}
-          </button>
         </div>
       </nav>
     </>

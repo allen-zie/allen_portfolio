@@ -1,8 +1,13 @@
 
-import { GraduationCap, Briefcase, CalendarDays } from "lucide-react";
+import { GraduationCap, Briefcase, CalendarDays, FileText } from "lucide-react";
 import "./Education.css";
+import { Button } from "../ui/button";
 
 export const Education = () => {
+  const openResume = () => {
+    window.open("/resume.pdf", "_blank");
+  };
+
   return (
     <section id="education" className="education">
       <div className="container">
@@ -64,6 +69,17 @@ export const Education = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        <div className="resume-button-container">
+          <Button 
+            onClick={openResume} 
+            className="resume-button"
+            variant="default"
+          >
+            <FileText className="mr-2" />
+            Download Resume
+          </Button>
         </div>
       </div>
     </section>
