@@ -1,5 +1,9 @@
 
 import './Skills.css';
+import { Suspense } from 'react';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import SkillsCube from '../SkillsCube';
 
 // Import skill images
 import reactImage from '@/assets/images/ReactJS.png';
@@ -17,8 +21,8 @@ interface Skill {
 export const Skills = () => {
   const skills: Skill[] = [
     { name: "React", image: reactImage, percentage: 90 },
-    { name: "HTML", image: javascriptImage, percentage: 90 },
-    { name: "CSS", image: javascriptImage, percentage: 95 },
+    { name: "HTML", image: htmlImage, percentage: 90 },
+    { name: "CSS", image: cssImage, percentage: 95 },
     { name: "Java", image: javascriptImage, percentage: 65 },
     { name: "Javascript", image: javascriptImage, percentage: 80 },
     { name: "SQL", image: javascriptImage, percentage: 85 },
@@ -31,6 +35,24 @@ export const Skills = () => {
     <section id="skills" className="skills-section">
       <div className="skills-container">
         <h2 className="skills-title">Skills & Expertise</h2>
+
+        <div className="skills-cube-container">
+          <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
+            <ambientLight intensity={1.5} />
+            <directionalLight position={[5, 5, 5]} intensity={1} />
+            <Suspense fallback={null}>
+              <SkillsCube />
+            </Suspense>
+            <OrbitControls 
+              autoRotate
+              autoRotateSpeed={1.5}
+              enableZoom={false}
+              enablePan={false}
+              minPolarAngle={Math.PI / 4}
+              maxPolarAngle={Math.PI * 3 / 4}
+            />
+          </Canvas>
+        </div>
 
         <div className="skills-grid">
           {skills.map((skill, index) => (
