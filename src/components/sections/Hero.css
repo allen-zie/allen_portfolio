@@ -1,3 +1,4 @@
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -59,14 +60,14 @@
   height: auto;
   border-radius: 5%;
   box-shadow: 0 4px 6px -1px rgba(6, 6, 6, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.5s ease-out, heartbeat 1.5s infinite;
   transition: all 0.3s ease;
 }
 
 .profile-image:hover {
-  background-color: #9b87f5;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(155, 135, 245, 0.3);
-  border: 2px solid #9b87f5;
+  animation: none;
+  border: 3px solid #9b87f5;
+  transform: scale(1.02);
 }
 
 .hero-title {
