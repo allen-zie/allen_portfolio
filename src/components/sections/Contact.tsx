@@ -22,10 +22,10 @@ export const Contact = () => {
     
     if (formRef.current) {
       emailjs.sendForm(
-        'gesrcxn', // Replace with your EmailJS service ID
-        'm5vk4fe', // Replace with your EmailJS template ID
+        'service_xg0rp8g', // Replace with your EmailJS service ID
+        'template_lv8alcb', // Replace with your EmailJS template ID
         formRef.current,
-        'e4I6NSI6-2SwYwmH5' // Replace with your EmailJS public key
+        'GQgPvsSv30zTGZ8BX' // Replace with your EmailJS public key
       )
         .then((result) => {
           console.log('SUCCESS!', result.text);
