@@ -21,8 +21,8 @@ interface Skill {
 export const Skills = () => {
   const skills: Skill[] = [
     { name: "React", image: reactImage, percentage: 90 },
-    { name: "HTML", image: htmlImage, percentage: 90 },
-    { name: "CSS", image: cssImage, percentage: 95 },
+    { name: "HTML", image: javascriptImage, percentage: 90 },
+    { name: "CSS", image: javascriptImage, percentage: 95 },
     { name: "Java", image: javascriptImage, percentage: 65 },
     { name: "Javascript", image: javascriptImage, percentage: 80 },
     { name: "SQL", image: javascriptImage, percentage: 85 },
