@@ -22,8 +22,8 @@ export const Contact = () => {
     
     if (formRef.current) {
       emailjs.sendForm(
-        'service_gesrcxn', // Replace with your EmailJS service ID
-        'template_m5vk4fe', // Replace with your EmailJS template ID
+        'gesrcxn', // Replace with your EmailJS service ID
+        'm5vk4fe', // Replace with your EmailJS template ID
         formRef.current,
         'e4I6NSI6-2SwYwmH5' // Replace with your EmailJS public key
       )
