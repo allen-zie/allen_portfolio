@@ -1,0 +1,54 @@
+
+# Dependencies List
+
+This file contains all the dependencies used in the project and how to install them.
+
+## Core Dependencies
+- React
+- React DOM
+- React Router DOM
+- TypeScript
+- Vite
+
+## UI and Styling Dependencies
+- Tailwind CSS
+- shadcn/ui components
+- Lucide React (for icons)
+- class-variance-authority
+- tailwind-merge
+- clsx
+
+## Animation and Visual Effects
+- React Type Animation
+- Three.js (for 3D effects)
+
+## Data Management
+- TanStack React Query
+
+## Form Handling
+- React Hook Form
+- Zod (validation)
+
+## Email Integration
+- EmailJS Browser
+
+## To install all dependencies, you can run:
+```bash
+npm install @emailjs/browser @hookform/resolvers @radix-ui/react-accordion @radix-ui/react-alert-dialog @radix-ui/react-aspect-ratio @radix-ui/react-avatar @radix-ui/react-checkbox @radix-ui/react-collapsible @radix-ui/react-context-menu @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-hover-card @radix-ui/react-label @radix-ui/react-menubar @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-progress @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select @radix-ui/react-separator @radix-ui/react-slider @radix-ui/react-slot @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast @radix-ui/react-toggle @radix-ui/react-toggle-group @radix-ui/react-tooltip @react-three/drei @tanstack/react-query class-variance-authority clsx cmdk date-fns embla-carousel-react input-otp lucide-react next-themes react react-day-picker react-dom react-hook-form react-resizable-panels react-router-dom react-type-animation recharts sonner tailwind-merge tailwindcss-animate three vaul zod
+```
+
+## Alternative Installation with Yarn
+```bash
+yarn add @emailjs/browser @hookform/resolvers @radix-ui/react-accordion @radix-ui/react-alert-dialog @radix-ui/react-aspect-ratio @radix-ui/react-avatar @radix-ui/react-checkbox @radix-ui/react-collapsible @radix-ui/react-context-menu @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-hover-card @radix-ui/react-label @radix-ui/react-menubar @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-progress @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select @radix-ui/react-separator @radix-ui/react-slider @radix-ui/react-slot @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast @radix-ui/react-toggle @radix-ui/react-toggle-group @radix-ui/react-tooltip @react-three/drei @tanstack/react-query class-variance-authority clsx cmdk date-fns embla-carousel-react input-otp lucide-react next-themes react react-day-picker react-dom react-hook-form react-resizable-panels react-router-dom react-type-animation recharts sonner tailwind-merge tailwindcss-animate three vaul zod
+```
+
+## Alternative Installation with Bun
+```bash
+bun add @emailjs/browser @hookform/resolvers @radix-ui/react-accordion @radix-ui/react-alert-dialog @radix-ui/react-aspect-ratio @radix-ui/react-avatar @radix-ui/react-checkbox @radix-ui/react-collapsible @radix-ui/react-context-menu @radix-ui/react-dialog @radix-ui/react-dropdown-menu @radix-ui/react-hover-card @radix-ui/react-label @radix-ui/react-menubar @radix-ui/react-navigation-menu @radix-ui/react-popover @radix-ui/react-progress @radix-ui/react-radio-group @radix-ui/react-scroll-area @radix-ui/react-select @radix-ui/react-separator @radix-ui/react-slider @radix-ui/react-slot @radix-ui/react-switch @radix-ui/react-tabs @radix-ui/react-toast @radix-ui/react-toggle @radix-ui/react-toggle-group @radix-ui/react-tooltip @react-three/drei @tanstack/react-query class-variance-authority clsx cmdk date-fns embla-carousel-react input-otp lucide-react next-themes react react-day-picker react-dom react-hook-form react-resizable-panels react-router-dom react-type-animation recharts sonner tailwind-merge tailwindcss-animate three vaul zod
+```
+
+## Dev Dependencies
+For development environment, you might also need:
+```bash
+npm install -D typescript @types/react @types/react-dom @vitejs/plugin-react-swc vite tailwindcss postcss autoprefixer
+```
