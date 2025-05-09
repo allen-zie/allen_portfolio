@@ -68,6 +68,7 @@
   animation: none;
   border: 3px solid #9b87f5;
   transform: scale(1.02);
+  box-shadow: 0 10px 15px rgba(155, 134, 249, 0.2);
 }
 
 .hero-title {
