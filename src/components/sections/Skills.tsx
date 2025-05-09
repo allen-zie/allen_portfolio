@@ -7,10 +7,10 @@ import pythonImage from '@/assets/images/Python.webp';
 import cssImage from '@/assets/images/CSS.webp';
 import javascriptImage from '@/assets/images/Javascript.webp';
 import htmlImage from '@/assets/images/HTML.webp';
-import javaImage from '@/assets/images/Java.webp';
+import javaImage from '@/assets/images/java.webp';
 import solidityImage from '@/assets/images/Solidity.webp';
 import powerBIImage from '@/assets/images/Microsoft-Power-BI.webp'; 
-import sqlImage from '@/assets/images/SQL.webp';
+import sqlImage from '@/assets/images/sql.webp';
 
 interface Skill {
   name: string;
