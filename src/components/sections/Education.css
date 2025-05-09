@@ -63,6 +63,7 @@
 
 .left-container::after {
   right: -10px;
+  transform: translateX(50%);
 }
 
 .right-container {
@@ -71,6 +72,7 @@
 
 .right-container::after {
   left: -10px;
+  transform: translateX(-50%);
 }
 
 .timeline-icon {
@@ -146,6 +148,7 @@
   .timeline-container::after {
     left: 21px;
     top: 25px;
+    transform: translateX(0);
   }
   
   .left-container,
