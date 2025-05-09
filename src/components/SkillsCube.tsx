@@ -9,6 +9,7 @@ import pythonImage from '@/assets/images/Python.png';
 import cssImage from '@/assets/images/CSS.png';
 import javascriptImage from '@/assets/images/Javascript.png';
 import htmlImage from '@/assets/images/HTML.png';
+// Note: We're using JavaScript image for Java since there's no Java image in the assets
 
 const SkillsCube = () => {
   const meshRef = useRef<THREE.Mesh>(null);
