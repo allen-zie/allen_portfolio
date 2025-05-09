@@ -30,6 +30,12 @@
   opacity: 0.7;
 }
 
+.hero-logos:hover {
+ animation: fadeIn 0.5s ease-out, heartbeat 1.5s infinite;
+  transform: scale(1.02);
+  box-shadow: 0 10px 15px rgba(155, 134, 249, 0.2);
+}
+
 .hero-container {
   display: flex;
   align-items: center;
@@ -66,7 +72,6 @@
 
 .profile-image:hover {
   animation: none;
-  border: 3px solid #9b87f5;
   transform: scale(1.02);
   box-shadow: 0 10px 15px rgba(155, 134, 249, 0.2);
 }
