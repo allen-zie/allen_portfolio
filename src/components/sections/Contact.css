@@ -51,7 +51,7 @@
 
 .form-input {
   background-color: rgba(var(--secondary), 0.1);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .form-input::placeholder {

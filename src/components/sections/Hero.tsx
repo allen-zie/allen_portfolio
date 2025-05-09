@@ -30,13 +30,15 @@ export const Hero = () => {
           </h2>
 
           <div className="animate">
-            <h1>I am a <TypeAnimation
+            <h1>I am <TypeAnimation
               sequence={[
-                "Data Engineer",
+                "an aspiring Web3 Developer",
+                500,
+                "a Data Engineer",
                 1000,
-                "Full Stack Developer",
+                "a Full Stack Developer",
                 1000,
-                "Software Engineer",
+                "a Software Engineer",
                 1000,
               ]}
               wrapper="span"
