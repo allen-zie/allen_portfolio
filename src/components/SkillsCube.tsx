@@ -5,12 +5,12 @@ import { TextureLoader } from 'three';
 import * as THREE from 'three';
 
 // Import skill images
-import reactImage from '@/assets/images/ReactJS.png';
-import pythonImage from '@/assets/images/Python.png';
-import cssImage from '@/assets/images/CSS.png';
-import javascriptImage from '@/assets/images/Javascript.png';
-import htmlImage from '@/assets/images/HTML.png';
-import javaImage from '@/assets/images/java.png'; // Directly importing Java image
+import reactImage from '@/assets/images/ReactJS.webp';
+import pythonImage from '@/assets/images/Python.webp';
+import cssImage from '@/assets/images/CSS.webp';
+import javascriptImage from '@/assets/images/Javascript.webp';
+import solidityImage from '@/assets/images/Solidity.webp';
+import javaImage from '@/assets/images/java.webp'; 
 
 const SkillsCube = () => {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -21,7 +21,7 @@ const SkillsCube = () => {
     pythonImage,   // Back
     cssImage,      // Top
     javascriptImage, // Bottom
-    htmlImage,     // Left
+    solidityImage,     // Left
     javaImage      // Right
   ]);
 
