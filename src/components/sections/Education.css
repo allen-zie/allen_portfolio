@@ -63,7 +63,7 @@
 
 .left-container::after {
   right: -10px;
-  transform: translateX(50%);
+  transform: translateX(55%);
 }
 
 .right-container {
