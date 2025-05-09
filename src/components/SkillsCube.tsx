@@ -1,6 +1,7 @@
+
 import { useRef, useEffect } from 'react';
 import { useFrame, useLoader } from '@react-three/fiber';
-import { TextureLoader } from 'three/src/loaders/TextureLoader';
+import { TextureLoader } from 'three';
 import * as THREE from 'three';
 
 // Import skill images
@@ -9,7 +10,7 @@ import pythonImage from '@/assets/images/Python.png';
 import cssImage from '@/assets/images/CSS.png';
 import javascriptImage from '@/assets/images/Javascript.png';
 import htmlImage from '@/assets/images/HTML.png';
-import javaImage from javascriptImage; // Temporarily using JS icon for Java
+import javaImage from '@/assets/images/java.png'; // Directly importing Java image
 
 const SkillsCube = () => {
   const meshRef = useRef<THREE.Mesh>(null);
