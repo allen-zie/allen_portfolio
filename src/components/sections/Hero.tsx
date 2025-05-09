@@ -2,8 +2,8 @@
 import { TypeAnimation } from "react-type-animation";
 import { Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import "./Hero.css";
-import logo from '../../assets/images/azn.png'
-import profile from '../../assets/images/imae001.png'
+import logo from '@/assets/images/azn.webp'
+import profile from '@/assets/images/imae001.webp'
 
 export const Hero = () => {
   return (
