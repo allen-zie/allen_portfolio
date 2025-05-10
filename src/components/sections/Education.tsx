@@ -28,7 +28,6 @@ export const Education = () => {
             </div>
           </div>
 
-        <div className="timeline">
           <div className="timeline-container right-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
