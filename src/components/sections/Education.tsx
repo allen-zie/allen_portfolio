@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export const Education = () => {
   const openResume = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open("../documents.Allen Zipho N", "_blank");
   };
 
   return (
@@ -13,6 +13,21 @@ export const Education = () => {
       <div className="container">
         <h2 className="section-title">Education & Experience</h2>
         
+        <div className="timeline">
+          <div className="timeline-container left-container">
+            <div className="timeline-icon">
+              <Briefcase size={24} />
+            </div>
+            <div className="timeline-content">
+              <h3>Techincal Consualtant</h3>
+              <p className="timeline-location">Pique Squid</p>
+              <div className="timeline-date">
+                <CalendarDays size={16} />
+                <span>2023 - 2025</span>
+              </div>
+            </div>
+          </div>
+
         <div className="timeline">
           <div className="timeline-container right-container">
             <div className="timeline-icon">
