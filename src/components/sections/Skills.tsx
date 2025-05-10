@@ -1,3 +1,4 @@
+
 import './Skills.css';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
@@ -38,7 +39,6 @@ export const Skills = () => {
     <section id="skills" className="skills-section">
       <div className="skills-container">
         <h2 className="skills-title">Skills & Expertise</h2>
-
 
         <div className="skills-cube-container">
           <Canvas camera={{ position: [0, 0, 8], fov: 50 }}>
