@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export const Education = () => {
   const openResume = () => {
-    window.open("../documents.Allen Zipho N", "_blank");
+    window.open("../documents.Allen Zipho Ndlovu Resume1", "_blank");
   };
 
   return (
