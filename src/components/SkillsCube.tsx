@@ -10,7 +10,7 @@ import pythonImage from '@/assets/images/Python.webp';
 import cssImage from '@/assets/images/CSS.webp';
 import javascriptImage from '@/assets/images/Javascript.webp';
 import solidityImage from '@/assets/images/Solidity.webp';
-import javaImage from '@/assets/images/java.webp';
+import javaImage from '@/assets/images/javawords.webp';
 
 const SkillsCube = () => {
   const meshRef = useRef<THREE.Mesh>(null);

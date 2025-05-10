@@ -14,6 +14,7 @@ export const Education = () => {
         <h2 className="section-title">Education & Experience</h2>
         
         <div className="timeline">
+          
           <div className="timeline-container left-container">
             <div className="timeline-icon">
               <Briefcase size={24} />
@@ -23,7 +24,7 @@ export const Education = () => {
               <p className="timeline-location">Pique Squid</p>
               <div className="timeline-date">
                 <CalendarDays size={16} />
-                <span>2023 - 2025</span>
+                <span>2025 - present</span>
               </div>
             </div>
           </div>
