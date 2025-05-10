@@ -1,0 +1,82 @@
+
+.specializations-section {
+  padding: 4rem 2rem;
+  background-color: #1A1F2C;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #9b87f5, #E5DEFF);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 3rem;
+}
+
+.specializations-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .specializations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .specializations-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.specialization-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.specialization-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.specialization-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.specialization-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.specialization-description {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
