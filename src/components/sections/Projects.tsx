@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import pizzasales from '../../assets/images/PizzaSales.png';
+import "./Projects.css";
 
 export const Projects = () => {
   const projects = [
@@ -33,21 +34,21 @@ export const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center px-4 lg:px-8 py-20">
-      <div className="max-w-6xl mx-auto w-full">
-        <h2 className="text-3xl lg:text-4xl font-bold mb-12 text-primary animate-fade-in">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section id="projects" className="projects-section flex items-center justify-center">
+      <div className="projects-container">
+        <h2 className="projects-heading text-primary animate-fade-in">Featured Projects</h2>
+        <div className="projects-grid">
           {projects.map((project, index) => (
             <Card 
               key={project.title}
-              className="bg-secondary/10 backdrop-blur-sm border-secondary/20 hover:border-primary/50 transition-all duration-300 overflow-hidden animate-fade-in"
+              className="project-card bg-secondary/10 backdrop-blur-sm border-secondary/20 hover:border-primary/50 transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="project-image">
                 <img
                   src={project.image}
                   alt={`${project.title} screenshot`}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  className="w-full h-full object-cover"
                 />
               </div>
               
@@ -57,11 +58,11 @@ export const Projects = () => {
               </CardHeader>
               
               <CardContent>
-                <div className="flex flex-wrap gap-2 mt-2">
+                <div className="project-tech">
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
-                      className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary"
+                      className="project-tech-item"
                     >
                       {tech}
                     </span>
@@ -69,7 +70,7 @@ export const Projects = () => {
                 </div>
               </CardContent>
               
-              <CardFooter className="flex justify-between">
+              <CardFooter className="project-footer">
                 {project.link && (
                   <Button variant="outline" size="sm" asChild>
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
