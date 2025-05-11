@@ -2,18 +2,27 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import pizzasales from '../../assets/images/PizzaSales.png';
+import pizzasales from '../../assets/images/PizzaSales.webp';
+import anchorofchrist from '../../assets/images/AnchorOfChrist.webp';
 import "./Projects.css";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution with real-time inventory management.",
-      tech: ["React", "Node.js", "MongoDB"],
+      title: "The Anchor of Christ International Ministries",
+      description: "A website for a church to evangelise the word of the Lord, God almight.",
+      tech: ["WordPress"],
+      image: anchorofchrist,
+      //link: "https://github.com/username/ecommerce-platform",
+      demo: "https://anchorofchrist.org/",
+    },
+    {
+      title: "Analytics Dashboard",
+      description: "Real-time analytics dashboard with data visualization.",
+      tech: ["SQL", "Excel", "Microsoft Power BI"],
       image: pizzasales,
-      link: "https://github.com/username/ecommerce-platform",
-      demo: "https://ecommerce-demo.example.com",
+      link: "https://github.com/allen-zie/Pizza-Sales-Dashboard-Practise.git",
+      //demo: "https://analytics.example.com",
     },
     {
       title: "Task Management App",
@@ -22,14 +31,6 @@ export const Projects = () => {
       image: pizzasales,
       link: "https://github.com/username/task-management",
       demo: "https://task-app.example.com",
-    },
-    {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with data visualization.",
-      tech: ["React", "D3.js", "Python"],
-      image: pizzasales,
-      link: "https://github.com/username/analytics-dashboard",
-      demo: "https://analytics.example.com",
     },
   ];
 
