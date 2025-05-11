@@ -2,8 +2,8 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import pizzasales from '../../assets/images/PizzaSales.webp';
-import anchorofchrist from '../../assets/images/AnchorOfChrist.webp';
+import pizzasales from '@/assets/images/PizzaSales.webp';
+import anchorofchrist from '@/assets/images/AnchorOfChrist.webp';
 import "./Projects.css";
 
 export const Projects = () => {
