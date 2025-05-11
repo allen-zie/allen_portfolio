@@ -20,7 +20,7 @@ export const Projects = () => {
       title: "Analytics Dashboard",
       description: "Real-time analytics dashboard with data visualization.",
       tech: ["SQL", "Excel", "Microsoft Power BI"],
-      image: pizzasales,
+      image: anchorofchrist,
       link: "https://github.com/allen-zie/Pizza-Sales-Dashboard-Practise.git",
       //demo: "https://analytics.example.com",
     },
