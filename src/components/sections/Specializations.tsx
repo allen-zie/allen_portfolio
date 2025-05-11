@@ -63,7 +63,7 @@ export const Specializations = () => {
 
   return (
     <section id="specializations" className="specializations-section">
-      <h2 className="section-title">Specializations</h2>
+      <h2 className="section-title">Specialisations</h2>
       <p className="section-subtitle">Areas of expertise and interest</p>
       
       <div className="specializations-grid">
