@@ -11,7 +11,7 @@ export const Projects = () => {
     {
       title: "The Anchor of Christ International Ministries",
       description: "A website for a church to evangelise the word of the Lord, God almight.",
-      tech: ["WordPress"],
+      tech: ["WordPress", "Div"],
       image: anchorofchrist,
       //link: "https://github.com/username/ecommerce-platform",
       demo: "https://anchorofchrist.org/",
