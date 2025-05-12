@@ -3,7 +3,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import pizzasales from '@/assets/images/PizzaSales.webp';
-import anchorofchrist from '@/assets/images/Anchor of Christ.webp';
+import anchorofchrist from '@/assets/images/Anchor.webp';
 import "./Projects.css";
 
 export const Projects = () => {
