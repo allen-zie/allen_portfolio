@@ -27,8 +27,8 @@ export const Projects = () => {
     },
     {
       title: "Pique Squid Website",
-      description: "A collaborative team effort to bring the PiqueSquid website to life, what an amazing opportunity to work with some of the innovative minds in Zim-Tech Industry.",
-      tech: ["HTML", "Javascript", "Bootstrap 5" "PostgreSQL"],
+      description: "A collaborative team effort that brought the PiqueSquid website to life, and provided an amazing opportunity to work with some of the most innovative minds in Zim-Tech Industry.",
+      tech: ["HTML", "Javascript", "Bootstrap 5", "PostgreSQL"],
       image: piquesquid,
       //link: "https://github.com/username/task-management",
       demo: "https://www.piquesquid.com/",
