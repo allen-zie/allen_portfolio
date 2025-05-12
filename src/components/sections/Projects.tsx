@@ -4,6 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import pizzasales from '@/assets/images/PizzaSales.webp';
 import anchorofchrist from '@/assets/images/Anchor.webp';
+import piquesquid from '@/assets/images/PiqueSquid.webp'
 import "./Projects.css";
 
 export const Projects = () => {
@@ -17,20 +18,20 @@ export const Projects = () => {
       demo: "https://anchorofchrist.org/",
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with data visualization.",
+      title: "Pizza Sales Analytics Dashboard",
+      description: "Learning data visualization using Power BI with the creation of pizza sales analytics dashboard.",
       tech: ["SQL", "Excel", "Microsoft Power BI"],
-      image: anchorofchrist,
+      image: pizzasales,
       link: "https://github.com/allen-zie/Pizza-Sales-Dashboard-Practise.git",
       //demo: "https://analytics.example.com",
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management tool for remote teams.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL"],
-      image: pizzasales,
-      link: "https://github.com/username/task-management",
-      demo: "https://task-app.example.com",
+      title: "Pique Squid Website",
+      description: "A collaborative team effort to bring the PiqueSquid website to life, what an amazing opportunity to work with some of the innovative minds in Zim-Tech Industry.",
+      tech: ["HTML", "Javascript", "Bootstrap 5" "PostgreSQL"],
+      image: piquesquid,
+      //link: "https://github.com/username/task-management",
+      demo: "https://www.piquesquid.com/",
     },
   ];
 
