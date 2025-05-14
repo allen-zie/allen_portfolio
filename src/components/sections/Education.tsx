@@ -7,7 +7,7 @@ export const Education = () => {
   const openResume = () => {
     const link = document.createElement("a");
     link.href = "/assets/documents/Allen Zipho Ndlovu Resume1.pdf"; // use / for public folder reference
-    link.download = "Allen Zipho Ndlovu Resume.pdf";
+    link.download = "Allen Zipho Ndlovu Resume1.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
