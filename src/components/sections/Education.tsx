@@ -5,7 +5,12 @@ import { Button } from "../ui/button";
 
 export const Education = () => {
   const openResume = () => {
-    window.open("../assets/documents/Allen Zipho Ndlovu Resume1.pdf", "_blank");
+    const link = document.createElement("a");
+    link.href = "/assets/documents/Allen Zipho Ndlovu Resume1.pdf"; // use / for public folder reference
+    link.download = "Allen Zipho Ndlovu Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
