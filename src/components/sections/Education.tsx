@@ -2,7 +2,7 @@
 import { GraduationCap, Briefcase, CalendarDays, FileText } from "lucide-react";
 import "./Education.css";
 import { Button } from "../ui/button";
-import resumePDF from "@/assets/documents/Allen Zipho Ndlovu Resume1";
+import resumePDF from "./assets/documents/Allen Zipho Ndlovu Resume1.pdf";
 
 export const Education = () => {
   const openResume = () => {
