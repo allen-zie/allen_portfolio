@@ -2,15 +2,11 @@
 import { GraduationCap, Briefcase, CalendarDays, FileText } from "lucide-react";
 import "./Education.css";
 import { Button } from "../ui/button";
+import resumePDF from "@/assets/documents/Allen Zipho Ndlovu Resume1";
 
 export const Education = () => {
   const openResume = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/documents/Allen Zipho Ndlovu Resume1.pdf"; // use / for public folder reference
-    link.download = "Allen Zipho Ndlovu Resume1.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open(resumePDF);
   };
 
   return (
