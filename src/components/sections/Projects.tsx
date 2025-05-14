@@ -56,7 +56,7 @@ export const Projects = () => {
               
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-primary/90">{project.title}</CardTitle>
-                <CardDescription className="text-foreground/70">{project.description}</CardDescription>
+                <CardDescription style={{ color: "#E5DEFF" }}>{project.description}</CardDescription>
               </CardHeader>
               
               <CardContent>
