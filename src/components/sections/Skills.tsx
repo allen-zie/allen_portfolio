@@ -49,7 +49,7 @@ export const Skills = () => {
             </Suspense>
             <OrbitControls 
               autoRotate
-              autoRotateSpeed={1.5}
+              autoRotateSpeed={3}
               enableZoom={false}
               enablePan={false}
               minPolarAngle={Math.PI / 4}

@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export const Education = () => {
   const openResume = () => {
-    window.open("/assets/documents/AllenZiphoNdlovuResume1.pdf", "_blank");
+    window.open("./Allen.pdf", "_blank");
   };
 
   return (
