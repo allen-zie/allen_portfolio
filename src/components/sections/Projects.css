@@ -11,13 +11,18 @@
 }
 
 .projects-heading {
-  text-align: center;
+  /*text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 3rem;
   color: var(--primary);
   position: relative;
-  display: inline-block;
+  display: inline-block;*/
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .projects-grid {
