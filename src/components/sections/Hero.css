@@ -95,13 +95,13 @@
 
 .hero-subtitle {
   font-size: 1.125rem;
-  line-height: 1.75rem;
+  line-height: 2.75rem;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .animate {
   font-size: 2.25rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   font-weight: 450;
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #a19cb8, #E5DEFF);
