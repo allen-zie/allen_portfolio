@@ -25,8 +25,8 @@ export const Hero = () => {
           <h1 className="hero-title">
             Hi my name is Allen. 
           </h1>
-          <h2>
-          Finally made it past Hello World 😂 😂 😂
+          <h2 className="hero-subtitle">
+            Finally made it past Hello World 😂 😂 😂
           </h2>
 
           <div className="animate">
