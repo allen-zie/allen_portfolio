@@ -48,7 +48,7 @@ export const Hero = () => {
             
           </div>
           <p className="hero-subtitle">
-            Crafting digital experiences that make a difference.
+            Crafting digital experience that make's a difference.
           </p>
         </div>
         <div className="hero-image-container">
