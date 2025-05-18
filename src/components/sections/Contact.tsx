@@ -113,7 +113,7 @@ export const Contact = () => {
         </form>
 
         <div className="contact-footer">
-          <p>Based in South Africa</p>
+          <p>Based in Zimbabwe</p>
           <p>Available for remote work worldwide</p>
         </div>
       </div>
