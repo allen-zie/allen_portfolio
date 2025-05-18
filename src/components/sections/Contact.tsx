@@ -114,7 +114,7 @@ export const Contact = () => {
 
         <div className="contact-footer">
           <p>Based in Zimbabwe</p>
-          <p>Available for remote work worldwide</p>
+          <p>Available for remote work worldwide!</p>
         </div>
       </div>
     </section>
