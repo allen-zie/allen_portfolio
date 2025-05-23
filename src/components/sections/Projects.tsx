@@ -4,7 +4,8 @@ import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import pizzasales from '@/assets/images/PizzaSales.webp';
 import anchorofchrist from '@/assets/images/Anchor.webp';
-import piquesquid from '@/assets/images/PiqueSquid.webp'
+import piquesquid from '@/assets/images/PiqueSquid.webp';
+import gis from '@/assets/images/GIS.webp';
 import "./Projects.css";
 
 export const Projects = () => {
@@ -32,6 +33,14 @@ export const Projects = () => {
       image: piquesquid,
       //link: "https://github.com/username/task-management",
       demo: "https://www.piquesquid.com/",
+    },
+    {
+      title: "GIS Data Cleaning and Analysis",
+      description: "A project that involved cleaning and analyzing GIS data using Python and Pandas.",
+      tech: ["Python", "Pandas", "Geopandas"],
+      image: gis,
+      link: "https://github.com/allen-zie/GIS_Data_CleanerAnalysis.git",
+      //demo: "https://www.piquesquid.com/",
     },
   ];
 
