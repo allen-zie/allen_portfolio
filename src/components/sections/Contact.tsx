@@ -1,9 +1,9 @@
 
 import { useState, useRef } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
+import { Button } from "@/components/standalone/Button";
+import { Input } from "@/components/standalone/Input";
+import { Textarea } from "@/components/standalone/Textarea";
+import { useToast } from "@/hooks/use-toast";
 import { Mail } from "lucide-react";
 import './Contact.css';
 import emailjs from '@emailjs/browser';

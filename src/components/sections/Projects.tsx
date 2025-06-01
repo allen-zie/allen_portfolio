@@ -1,7 +1,7 @@
 
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/standalone/Card";
 import { ExternalLink, Github } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/standalone/Button";
 import pizzasales from '@/assets/images/PizzaSales.webp';
 import anchorofchrist from '@/assets/images/Anchor.webp';
 import piquesquid from '@/assets/images/PiqueSquid.webp';
