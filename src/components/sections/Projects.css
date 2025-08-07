@@ -2,12 +2,42 @@
 .projects-section {
   min-height: 100vh;
   padding: 4rem 1rem;
+  perspective: 1200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at top left, rgba(155, 135, 245, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(229, 222, 255, 0.1) 0%, transparent 50%);
+  animation: morphBackground 15s ease-in-out infinite;
+  z-index: 0;
+}
+
+@keyframes morphBackground {
+  0%, 100% { 
+    transform: scale(1) rotate(0deg);
+    opacity: 0.5;
+  }
+  50% { 
+    transform: scale(1.1) rotate(2deg);
+    opacity: 0.8;
+  }
 }
 
 .projects-container {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .projects-heading {
@@ -18,35 +48,99 @@
   background: linear-gradient(to right, #9b87f5, #E5DEFF);
   -webkit-background-clip: text;
   color: transparent;
+  transform: translateZ(40px);
+  text-shadow: 0 10px 30px rgba(155, 135, 245, 0.3);
+  transition: all 0.6s ease;
+}
+
+.projects-heading:hover {
+  transform: translateZ(60px) scale(1.05);
+  filter: drop-shadow(0 15px 40px rgba(155, 135, 245, 0.5));
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
+  transform-style: preserve-3d;
 }
 
 .project-card {
-  transition: all 0.3s ease;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   height: 100%;
   overflow: hidden;
+  transform-style: preserve-3d;
+  position: relative;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(155, 135, 245, 0.1);
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, 
+    rgba(155, 135, 245, 0.1) 0%, 
+    transparent 50%, 
+    rgba(229, 222, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateZ(40px) rotateY(8deg) rotateX(4deg) scale(1.05);
+  border-color: rgba(155, 135, 245, 0.4);
+  box-shadow: 
+    0 25px 60px rgba(155, 135, 245, 0.3),
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .project-image {
   position: relative;
   height: 200px;
   overflow: hidden;
+  transform-style: preserve-3d;
 }
 
 .project-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .project-card:hover .project-image img {
-  transform: scale(1.05);
+  transform: scale(1.15) rotateZ(2deg);
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.project-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(155, 135, 245, 0.2) 0%, 
+    transparent 50%, 
+    rgba(229, 222, 255, 0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-image::after {
+  opacity: 1;
 }
 
 .project-tech {
@@ -54,6 +148,7 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.5rem;
+  transform: translateZ(10px);
 }
 
 .project-tech-item {
@@ -62,12 +157,30 @@
   border-radius: 9999px;
   background-color: rgba(155, 135, 245, 0.1);
   color: #9b87f5;
+  transition: all 0.3s ease;
+  transform: translateZ(5px);
+}
+
+.project-card:hover .project-tech-item {
+  background-color: rgba(155, 135, 245, 0.2);
+  transform: translateZ(15px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(155, 135, 245, 0.3);
 }
 
 .project-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+  transform: translateZ(15px);
+}
+
+.project-footer button {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover .project-footer button {
+  transform: translateZ(20px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(155, 135, 245, 0.4);
 }
 
 /* Media Queries */
