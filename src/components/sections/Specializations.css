@@ -92,7 +92,6 @@
   border: 1px solid transparent;
   transform-style: preserve-3d;
   position: relative;
-  backdrop-filter: blur(10px);
   overflow: hidden;
 }
 
