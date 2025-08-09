@@ -17,20 +17,9 @@
   background: 
     radial-gradient(ellipse at top left, rgba(155, 135, 245, 0.1) 0%, transparent 50%),
     radial-gradient(ellipse at bottom right, rgba(229, 222, 255, 0.1) 0%, transparent 50%);
-  animation: morphBackground 15s ease-in-out infinite;
   z-index: 0;
 }
 
-@keyframes morphBackground {
-  0%, 100% { 
-    transform: scale(1) rotate(0deg);
-    opacity: 0.5;
-  }
-  50% { 
-    transform: scale(1.1) rotate(2deg);
-    opacity: 0.8;
-  }
-}
 
 .projects-container {
   max-width: 1200px;
