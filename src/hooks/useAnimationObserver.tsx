@@ -13,7 +13,7 @@ export const useAnimationObserver = () => {
           if (entry.isIntersecting) {
             entry.target.classList.add('is-visible');
             
-            // Add random 3D animation classes for variety
+            // Add random animation classes for variety
             const animations = ['perspective-slide', 'depth-emerge', 'scale-in', 'flip-in'];
             const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
             

@@ -33,13 +33,6 @@ const Index = () => {
       }
     });
     
-    // Add 3D perspective to the main container
-    const mainElement = document.querySelector('main');
-    if (mainElement) {
-      mainElement.style.transformStyle = 'preserve-3d';
-      mainElement.style.perspective = '1200px';
-    }
-    
     // Refresh the observer
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     animateElements.forEach((element) => {
@@ -48,9 +41,9 @@ const Index = () => {
   }, [observerRef]);
 
   return (
-    <div className="bg-[#1A1F2C] text-white min-h-screen" style={{ transformStyle: 'preserve-3d', perspective: '1200px' }}>
+    <div className="bg-[#1A1F2C] text-white min-h-screen">
       <Navigation />
-      <main className="pr-[80px] lg:pr-[100px]" style={{ transformStyle: 'preserve-3d' }}>
+      <main className="pr-[80px] lg:pr-[100px]">
         <Hero />
         <About />
         <Education />
