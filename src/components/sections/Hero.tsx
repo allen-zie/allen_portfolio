@@ -40,6 +40,8 @@ export const Hero = () => {
                 1000,
                 "a Software Engineer",
                 1000,
+                "a Network Engineer",
+                1000,
               ]}
               wrapper="span"
               speed={{ type: 'keyStrokeDelayInMs', value: 180 }}
