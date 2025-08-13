@@ -244,7 +244,7 @@
   }
 }
 
-/* Floating particles effect */
+/* Enhanced floating particles effect */
 .hero::before {
   content: '';
   position: absolute;
@@ -253,13 +253,15 @@
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(2px 2px at 20px 30px, rgba(155, 135, 245, 0.3), transparent),
-    radial-gradient(2px 2px at 40px 70px, rgba(229, 222, 255, 0.2), transparent),
-    radial-gradient(1px 1px at 90px 40px, rgba(155, 135, 245, 0.4), transparent),
-    radial-gradient(1px 1px at 130px 80px, rgba(229, 222, 255, 0.3), transparent);
+    radial-gradient(3px 3px at 20px 30px, rgba(155, 135, 245, 0.6), transparent),
+    radial-gradient(2px 2px at 40px 70px, rgba(229, 222, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 90px 40px, rgba(155, 135, 245, 0.7), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(229, 222, 255, 0.5), transparent),
+    radial-gradient(2px 2px at 160px 20px, rgba(155, 135, 245, 0.3), transparent),
+    radial-gradient(1px 1px at 200px 100px, rgba(229, 222, 255, 0.4), transparent);
   background-repeat: repeat;
-  background-size: 150px 100px;
-  animation: floatingParticles 20s linear infinite, heroFloat 15s ease-in-out infinite;
+  background-size: 180px 120px;
+  animation: floatingParticles 25s linear infinite, heroFloat 18s ease-in-out infinite;
   pointer-events: none;
   z-index: 1;
 }
@@ -281,10 +283,24 @@
 
 @keyframes floatingParticles {
   0% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg) scale(1);
+    opacity: 0.4;
+  }
+  25% {
+    transform: translateY(-30px) rotate(90deg) scale(1.2);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-60px) rotate(180deg) scale(0.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-90px) rotate(270deg) scale(1.1);
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(-100px) rotate(360deg);
+    transform: translateY(-120px) rotate(360deg) scale(1);
+    opacity: 0.3;
   }
 }
 
