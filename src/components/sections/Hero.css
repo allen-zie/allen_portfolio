@@ -134,7 +134,7 @@
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #a19cb8, #E5DEFF);
   -webkit-background-clip: text;
-  color: transparent;
+  /*color: transparent;*/
   transform: translateZ(15px);
   animation: textFloat 3s ease-in-out infinite;
 }
