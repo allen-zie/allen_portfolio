@@ -136,7 +136,7 @@
   -webkit-background-clip: text;
   color: #C0B3FA;
   transform: translateZ(15px);
-  animation: titleGlow 3s ease-in-out infinite;
+  animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .social-links {
