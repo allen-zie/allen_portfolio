@@ -259,7 +259,22 @@
     radial-gradient(1px 1px at 130px 80px, rgba(229, 222, 255, 0.3), transparent);
   background-repeat: repeat;
   background-size: 150px 100px;
-  animation: floatingParticles 20s linear infinite;
+  animation: floatingParticles 20s linear infinite, heroFloat 15s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 30% 70%, rgba(155, 135, 245, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(229, 222, 255, 0.08) 0%, transparent 60%);
+  animation: heroFloat 12s ease-in-out infinite reverse;
   pointer-events: none;
   z-index: 1;
 }
@@ -273,6 +288,16 @@
   }
 }
 
+@keyframes heroFloat {
+  0%, 100% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(20px) translateY(-30px) scale(1.05);
+    opacity: 0.8;
+  }
+}
 /* 3D tilt effect on hover */
 .hero-container:hover .hero-content {
   transform: rotateY(-5deg) rotateX(2deg);
